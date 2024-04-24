@@ -16,7 +16,8 @@
     "node-fetch": "^3.3.2",
     "react": "18.2.0",
     "react-bootstrap": "^2.9.1",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "zoomist": "^2.0.11"
   },
   "devDependencies": {
     "eslint": "^8.22.0",

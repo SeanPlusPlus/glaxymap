@@ -24,18 +24,22 @@ function Navigation() {
     </Modal>
   )
 
+  const infoEnabled = false
+
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/">Galaxy Map</Navbar.Brand>
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              <Button onClick={handleShow} variant="info">
-                Info
-              </Button>
-            </Navbar.Text>
-          </Navbar.Collapse>
+          {infoEnabled && (
+            <Navbar.Collapse className="justify-content-end">
+              <Navbar.Text>
+                <Button onClick={handleShow} variant="info">
+                  Info
+                </Button>
+              </Navbar.Text>
+            </Navbar.Collapse>
+          )}
         </Container>
       </Navbar>
       {InfoModal}
